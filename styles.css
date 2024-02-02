@@ -528,9 +528,7 @@
   color: #fff; /* Adjust text color of the button on hover */
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 @media (max-width: 767px) {
   .form-section {
