@@ -23,11 +23,11 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
     <div class="container-fluid custom-container">
       <a class="navbar-brand" href="#"><img src="Sawatdi-logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,19 +36,20 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#yen-section">About</a>
+            <a class="nav-link" href="#yen-section" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#visit-us">Visit</a>
+            <a class="nav-link" href="#visit-us" data-toggle="collapse" data-target=".navbar-collapse.show">Visit</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-form">Book</a>
+            <a class="nav-link" href="#contact-form" data-toggle="collapse" data-target=".navbar-collapse.show">Book</a>
           </li>
         </ul>
         <!-- Social media icons -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="https://www.facebook.com/profile.php?id=61555829677254" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
           </li>
@@ -257,5 +258,39 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<!-- Custom JavaScript -->
+<!-- Custom JavaScript -->
+<script>
+  $(document).ready(function() {
+    // Smooth scroll to anchor links
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        var scrollSpeed = 400; // Adjust scrolling speed here (milliseconds)
+
+        // Calculate offset to account for fixed navigation bar height
+        var offset = target.offset().top - $('.navbar').outerHeight();
+
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, scrollSpeed, 'linear'); // Use linear easing function
+      }
+    });
+
+    // Close navbar menu when a link is clicked
+    $(document).on('click', '.navbar-collapse.show', function (e) {
+      if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+      }
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
+
