@@ -263,30 +263,28 @@
 <!-- Custom JavaScript -->
 <!-- Custom JavaScript -->
 <script>
-  $(document).ready(function() {
-    // Smooth scroll to anchor links
-    $('a[href^="#"]').on('click', function(event) {
-      var target = $(this.getAttribute('href'));
-      if (target.length) {
-        event.preventDefault();
-        var scrollSpeed = 400; // Adjust scrolling speed here (milliseconds)
-
-        // Calculate offset to account for fixed navigation bar height
-        var offset = target.offset().top - $('.navbar').outerHeight();
-
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, scrollSpeed, 'linear'); // Use linear easing function
-      }
-    });
-
-    // Close navbar menu when a link is clicked
-    $(document).on('click', '.navbar-collapse.show', function (e) {
-      if ($(e.target).is('a')) {
-        $(this).collapse('hide');
-      }
-    });
+$(document).ready(function() {
+  // Smooth scroll to anchor links
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      var scrollSpeed = 400; // Adjust scrolling speed here (milliseconds)
+      var offset = target.offset().top - $('.navbar').outerHeight() + 1; // Adjust offset
+      $('html, body').stop().animate({
+        scrollTop: offset
+      }, scrollSpeed, 'linear'); // Use linear easing function
+    }
   });
+
+  // Close navbar menu when a link is clicked
+  $(document).on('click', '.navbar-collapse.show', function (e) {
+    if ($(e.target).is('a')) {
+      $(this).collapse('hide');
+    }
+  });
+});
+
 </script>
 
 
