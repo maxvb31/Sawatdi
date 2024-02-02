@@ -1,0 +1,540 @@
+
+*{
+    overflow-x: hidden;
+}
+/* Custom styles for hero section */
+.hero-section {
+    position: relative;
+    background-image: url('Sawatdi Wide image.jpg'); /* Placeholder image, replace with your own */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+  /* Custom styles for larger navigation links */
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  /* Custom styles for boxes */
+  .box {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (max-width: 1000px) {
+    .box {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .box {
+      height: 350px !important; /* Adjust the height as needed */
+    }
+  }
+  
+  /* Overlay style */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+  }
+
+  /* Adjust logo size */
+  .navbar-brand img {
+    max-height: 60px; /* Set the maximum height for the logo */
+    width: auto;
+  }
+
+  /* Custom container for navbar items */
+  .navbar-items {
+    margin-right: 15px; /* Adjust margin as needed */
+  }
+
+  .bg-custom{
+    background-color: #B73B3B ;
+  }
+
+  body, h1, h2, h3, h4, h5, h6, p, .navbar-brand, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .btn-custom{
+    background-color: #B73B3B;
+    color: white;
+  }
+
+  /* Center the navbar */
+  .navbar {
+    justify-content: center;
+  }
+
+  /* Background images for boxes */
+  .box-1 {
+    background-image: url(logo\ pattern\ light\ grey\ 30per.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-color: #838383 ;
+  }
+
+  .box-2 {
+    background-image: url(logo\ pattern\ bw\ 30per.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-color: #BFBFBF ;
+  }
+
+/* Custom styles for the boxes */
+    .box {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    }
+
+/* Custom styles for the horizontal rules */
+    .box hr {
+    border-top: 2px solid #000; /* Adjust as needed for border color */
+    width: 50%; /* Adjust as needed for the width of the line */
+    margin: 0 auto; /* Remove default margin */
+    }
+
+    .box h2{
+        font-size: 6rem;
+        padding: 30px 0;
+    }
+
+    .custom-head-1{
+        color: #B73B3B;
+    }
+
+    .custom-head-2{
+        color: #4A5DA7 ;
+    }
+
+    @media (max-width: 1000px) {
+        .box h2 {
+          font-size: 4rem; /* Adjust height for smaller screens */
+        }
+      }
+
+      .box hr.custom-hr-1{
+        border-color: #B73B3B;
+      }
+
+      .box hr.custom-hr-2{
+        border-color: #4A5DA7;
+      }
+
+      .box h2 {
+        transition: transform 0.3s ease-in-out; /* Add ease-in-out transition for default state */
+      }
+      
+      .box h2:hover {
+        transform: scale(1.2); /* Increase the scale on hover */
+        cursor: pointer;
+      }
+
+      .custom-ul{
+        padding-right: 90px;
+    }
+
+  /* Custom styles for the banner section */
+.banner-section {
+    background-image: url(banner\ bg.png); /* Specify the background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for h2 and p */
+    padding: 100px 0; /* Adjust padding as needed */
+  }
+  
+  /* Center the text horizontally and vertically */
+  .banner-section h2,
+  .banner-section p {
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Adjust font size and other styles as needed */
+  .banner-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px; /* Adjust spacing between h2 and p */
+  }
+  
+  .banner-section p {
+    font-size: 1.5rem;
+  }
+
+  .banner-section p:hover{
+    color: #B73B3B;
+    cursor: pointer;
+  }
+
+  .banner-section h2:hover{
+    color: #B73B3B;
+    cursor: pointer;
+  }
+  
+
+  
+  .text-content {
+    padding: 50px; /* Adjust padding as needed */
+    padding-left: 70px;
+  }
+  
+  .text-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px; /* Adjust spacing between heading and paragraph */
+    color: white;
+  }
+  
+  .text-content p {
+    font-size: 1.6rem;
+    color: white;
+  }
+  
+  .bg-custom-2 {
+    background-color: #838383;
+  }
+
+  
+  
+  .image-container {
+    height: 100%;
+  }
+  .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .image-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-2{
+    display: none;
+  }
+
+  @media (max-width: 1000px) {
+    .img-2{
+        display: flex;
+    }
+    .img-1{
+        display: none;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .text-content h2 {
+        font-size: 2rem;
+        margin-bottom: 20px; /* Adjust spacing between heading and paragraph */
+        color: white;
+      }
+      
+      .text-content p {
+        font-size: 1.2rem;
+        color: white;
+      }
+  }
+
+  @media (max-width:700px) {
+    .text-content h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px; /* Adjust spacing between heading and paragraph */
+        color: white;
+        text-align: left;
+      }
+      
+      .text-content p {
+        font-size: 0.9rem;
+        color: white;
+        text-align: left;
+      }
+  }
+
+  
+
+  
+/* Custom styles for the second banner section */
+.second-banner-section {
+    background-image: url('banner2\ bg.png'); /* Add your background image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    color: #ffffff; /* Set text color */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.second-banner-section img {
+    width: 70px; /* Set a fixed width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.second-banner-section .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px; /* Adjust height to center text vertically */
+    margin-top: 10px;
+}
+
+.contact-section {
+    background-color: #BFBFBF;
+}
+
+.contact-section img {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.findus-head {
+    color: #B73B3B;
+    font-size: 1.2rem;
+    text-align: left; /* Align to the left */
+}
+
+.findus-el {
+    color: #4A5DA7;
+    font-size: 1.2rem;
+}
+
+.findus-header {
+    color: #4A5DA7;
+    font-size: 3rem;
+    text-align: left; /* Align to the left */
+    padding-top: 30px; /* Increase top padding */
+}
+
+.contact-section hr {
+    border-top: 1px solid white;
+    margin: 10px 0;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+
+    .findus-head {
+        color: #B73B3B;
+        font-size: 1rem;
+        text-align: left; /* Align to the left */
+    }
+    
+    .findus-el {
+        color: #4A5DA7;
+        font-size: 1rem;
+    }
+    
+    .findus-header {
+        color: #4A5DA7;
+        font-size: 2rem;
+        text-align: left; /* Align to the left */
+        padding-top: 0px; /* Adjust the top padding */
+    }
+    .contact-section img {
+        padding-right: 0;
+        margin-right: 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .contact-section{
+        padding-top: 30px;
+        
+    }
+    .contact-section img{
+        padding-top: 20px;
+    }
+}
+    
+@media (min-width: 1800px){
+    .contact-section{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.contact-section {
+    background-color: #BFBFBF;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.contact-section .container-fluid {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.contact-section .col-md-6 {
+    padding: 20px; /* Add padding for spacing */
+}
+
+.footer-section{
+    background-color: #B73B3B !important;
+}
+
+.footer-section {
+    background-color: #333;
+    padding-top: 50px; /* Adjust top padding as needed */
+    padding-bottom: 50px; /* Adjust bottom padding as needed */
+}
+
+.text-sawatdi-vip {
+    color: #fff !important; /* Change the color of "Sawatdi VIP" text */
+}
+
+.btn-subscribe {
+    background-color: #fff;
+    color: #B73B3B;
+    border-color: #B73B3B;
+}
+
+.footer-section button{
+    color: #B73B3B;
+    background-color: white;
+}
+
+.footer-section {
+    background-color: #333;
+    padding-top: 50px; /* Adjust top padding as needed */
+    padding-bottom: 50px; /* Adjust bottom padding as needed */
+    text-align: left; /* Align content to the left */
+    padding-left: 50px;
+  }
+  
+  .footer-section .container {
+    padding-right: 5%; /* Adjust right padding to move content more to the left */
+    padding-left: 5%; /* Adjust left padding to move content more to the left */
+  }
+  
+  @media (max-width: 750px) {
+    .footer-section{
+        padding-left: 0;
+    }
+}
+
+
+/* Add a new media query to target smaller screen sizes */
+@media (max-width: 767px) {
+    .img-fluid.p-0 {
+      height: 200px; /* Adjust the height of the map image for smaller screens */
+      overflow: hidden; /* Hide any overflow if the image is larger than the specified height */
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .img-fluid.p-0 {
+      height: 200px; /* Adjust the height of the map image for smaller screens */
+      overflow: hidden; /* Hide any overflow if the image is larger than the specified height */
+    }
+    .img-fluid.p-0.text-center {
+      width: 100%; /* Set the width of the column to 100% for smaller screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .img-fluid.p-0 {
+      height: 300px; /* Remove fixed height */
+      max-width: 100%; /* Make sure the image doesn't exceed the column width */
+    }
+  }
+  
+/* Ensure button color and size match the rest of the design */
+.btn-custom.btn-book {
+  background-color: #B73B3B;
+  color: white;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  padding: 10px 30px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add some border radius for a rounded look */
+  margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+/* Remove hover effect on the button */
+.btn-custom.btn-book:hover {
+  background-color: #B73B3B;
+  color: #4A5DA7;
+}
+
+.map-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form-section {
+  background-image: url('blueban2.png');
+  background-color: #B73B3B;
+  background-size: cover;
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.form-section h2 {
+  color: #fff; /* Adjust text color as needed */
+}
+
+.form-section label {
+  color: #fff; /* Adjust label text color as needed */
+}
+
+.form-section .form-control {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity of form inputs */
+}
+
+.form-section .form-control:focus {
+  background-color: #fff; /* Adjust background color of form inputs on focus */
+}
+
+.form-section button {
+  background-color: #fff; /* Adjust background color of the button */
+  color: #B73B3B; /* Adjust text color of the button */
+  border-color: #fff; /* Adjust border color of the button */
+}
+
+.form-section button:hover {
+  background-color: #B73B3B; /* Adjust background color of the button on hover */
+  color: #fff; /* Adjust text color of the button on hover */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 767px) {
+  .form-section {
+    background-size: contain; /* Adjust background size for smaller screens */
+    background-position: center; /* Center the background image */
+  }
+}
