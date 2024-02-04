@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
-    <link rel="icon" href="Favicon" type="image/x-icon">
+    <link rel="icon" href="Favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -37,7 +37,7 @@
             <a class="nav-link" href="#yen-section" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#visit-us" data-toggle="collapse" data-target=".navbar-collapse.show">Visit</a>
+            <a class="nav-link" href="sawatdi-menu.html" data-target=".navbar-collapse.show">Menu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-form" data-toggle="collapse" data-target=".navbar-collapse.show">Book</a>
@@ -77,7 +77,7 @@
     <div class="col-lg-6 col-12">
       <div class="box box-1 d-flex flex-column justify-content-center align-items-center">
         <hr class="w-50 custom-hr-1">
-        <h2 class="text-center custom-head-1">MENU</h2>
+        <h2 class="text-center custom-head-1"><a class="menu-link" href="sawatdi-menu.html">MENU</a></h2>
         <hr class="w-50 custom-hr-1">
       </div>
     </div>
@@ -108,7 +108,7 @@
     <div class="col-md-12 col-lg-5 order-lg-1 d-flex align-items-center">
       <div class="text-content text-center text-lg-left">
         <h2>How it started</h2>
-        <p>Sawatdi Thai Restaurant was opened by Yen in St Peter Port, Guernsey over twenty years ago with the goal to present a range of delicious Thai cuisine with ingredients sourced from local produce. Our friendly staff look forward to welcoming you to Sawatdi, where there are countless food and drink options adaptable to diet, affordable prices and a view overlooking Guernsey's harbor. </p>
+        <p>Sawatdi Thai Restaurant was opened by Yen in St Peter Port, Guernsey over twenty years ago with the goal to present a range of delicious Thai cuisine with ingredients sourced from fresh local produce. Our friendly staff look forward to welcoming you to Sawatdi, where there are countless food and drink options adaptable to diet, affordable prices and a view overlooking Guernsey's harbor. </p>
       </div>
     </div>
     <!-- Image column -->
@@ -134,7 +134,7 @@
       </div>
       <div class="col-md-4 col-sm-12 text-center">
         <img src="icon22.png" alt="Icon 2">
-        <p>15+ years experience</p>
+        <p>20+ years experience</p>
       </div>
       <div class="col-md-4 col-sm-12 text-center">
         <img src="icon33.png" alt="Icon 3">
@@ -263,12 +263,20 @@
 <script>
 $(document).ready(function() {
   // Smooth scroll to anchor links
-  $('a[href^="#"]').on('click', function(event) {
+  $('a[href^="#"]').not('[href="#"]').not('[href="#navbarNav"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if (target.length) {
       event.preventDefault();
       var scrollSpeed = 400; // Adjust scrolling speed here (milliseconds)
-      var offset = target.offset().top - $('.navbar').outerHeight() + 1; // Adjust offset
+      var offset = target.offset().top;
+
+      // Adjust offset based on device type (desktop or mobile)
+      if ($(window).width() > 992) { // Desktop
+        offset -= $('.navbar').outerHeight();
+      } else { // Mobile
+        offset -= $('.navbar').outerHeight() + -450; // Increase this value to scroll down more
+      }
+
       $('html, body').stop().animate({
         scrollTop: offset
       }, scrollSpeed, 'linear'); // Use linear easing function
@@ -283,7 +291,11 @@ $(document).ready(function() {
   });
 });
 
-</script>
+
+
+
+
+  </script>
 
 
 

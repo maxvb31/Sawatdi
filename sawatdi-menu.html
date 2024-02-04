@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawatdi Menu</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="Favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="description" content="Authentic and traditional Thai restaurant in St Peter Port Guernsey with a private dining room available for your event.">
+    <!-- Bootstrap CSS -->
+    <style>
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Add padding to the top of the container */
+        .menu-container {
+            padding-top: 70px; /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+    <div class="container-fluid custom-container">
+        <a class="navbar-brand" href="#"><img src="Sawatdi-logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-nav" id="navbarNav">
+            <ul class="navbar-nav ml-auto custom-ul">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+            <!-- Social media icons -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61555829677254" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 menu-container"> <!-- Added 'menu-container' class -->
+    <h1 class="text-center mb-4">Menu</h1>
+
+    <!-- Menu Tabs -->
+    <ul class="nav nav-tabs" id="menuTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="appetisers-tab" data-toggle="tab" href="#appetisers" role="tab" aria-controls="appetisers" aria-selected="true">Appetisers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="soups-tab" data-toggle="tab" href="#soups" role="tab" aria-controls="soups" aria-selected="false">Soups</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="salads-tab" data-toggle="tab" href="#salads" role="tab" aria-controls="salads" aria-selected="false">Thai Salad</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="thai-curry-tab" data-toggle="tab" href="#thai-curry" role="tab" aria-controls="thai-curry" aria-selected="false">Thai Curry</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="stir-fries-tab" data-toggle="tab" href="#stir-fries" role="tab" aria-controls="stir-fries" aria-selected="false">Stir Fries</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="vegetables-tab" data-toggle="tab" href="#vegetables" role="tab" aria-controls="vegetables" aria-selected="false">Vegetables</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="rice-noodles-tab" data-toggle="tab" href="#rice-noodles" role="tab" aria-controls="rice-noodles" aria-selected="false">Rice & Noodles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="set-menus-tab" data-toggle="tab" href="#set-menus" role="tab" aria-controls="set-menus" aria-selected="false">Set Menus</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+        </li>
+    </ul>
+
+    <!-- Menu Content -->
+    <div class="tab-content mt-4" id="menuTabsContent">
+        <!-- Appetisers Tab -->
+        <div class="tab-pane fade show active" id="appetisers" role="tabpanel" aria-labelledby="appetisers-tab">
+            <ul class="list-group">
+                <li class="list-group-item">0. Prawn Crackers <span class="badge badge-primary">£2.50</span></li>
+                <li class="list-group-item">1. Satay (Chicken) <span class="badge badge-primary">£7.95</span></li>
+                <li class="list-group-item">2. Chicken Wing Lao Dang <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">3. Goong Hom Pa <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">4. Tod Man Pla <span class="badge badge-primary">£8.95</span></li>
+                <li class="list-group-item">5. Kanom Jeeb <span class="badge badge-primary">£8.95</span></li>
+                <li class="list-group-item">6. Cee Kong Moo <span class="badge badge-primary">£8.95</span></li>
+                <li class="list-group-item">7. Golden Prawn <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">8. Pla Muk Tod or Poo Tod <span class="badge badge-primary">£8.95</span></li>
+                <li class="list-group-item">9. Duck Spring Rolls <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">10. Gong Pow <span class="badge badge-primary">£14.95</span></li>
+                <li class="list-group-item">11. Sawatdi Mixed Canapes (2 people) <span class="badge badge-primary">£16.95</span></li>
+                <li class="list-group-item">12. Popea (v) <span class="badge badge-primary">£5.95</span></li>
+                <li class="list-group-item">13. Tod Man Kaw Pod (v) <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">14. Golden Triangle (v) <span class="badge badge-primary">£5.95</span></li>
+                <li class="list-group-item">15. Het Hom Tod (v) <span class="badge badge-primary">£5.95</span></li>
+                <li class="list-group-item">16. Toong Tong (v) <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">18. Tempura (mixed vegetables) (v) <span class="badge badge-primary">£7.95</span></li>
+                <li class="list-group-item">19. Sawatdi Mixed Vegetable Canapes (2 people) (v) <span class="badge badge-primary">£14.95</span></li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <!-- Soups Tab -->
+        <div class="tab-pane fade" id="soups" role="tabpanel" aria-labelledby="soup-tab">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    20. Tom Yum <br>
+                    Chicken <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£7.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                        <div class="price-item badge badge-primary">£6.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    21. Tom Kha <br>
+                    Chicken <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£7.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                        <div class="price-item badge badge-primary">£6.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    22. Tom Jued Woonsen <br>
+                    Chicken <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£7.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                        <div class="price-item badge badge-primary">£6.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">23. Thale Thai <span class="badge badge-primary">£16.95</span></li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+        
+        
+        <!-- Salads Tab -->
+        <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salad-tab">
+            <ul class="list-group">
+                <li class="list-group-item">24. Yum Pla Muk <span class="badge badge-primary">£9.95</span></li>
+                <li class="list-group-item">25. Yum Neu <span class="badge badge-primary">£9.95</span></li>
+                <li class="list-group-item">26. Larb <span class="badge badge-primary">£9.95</span></li>
+                <li class="list-group-item">27. Yum Tang <span class="badge badge-primary">£7.95</span></li>
+                <li class="list-group-item">
+                    28. Yum Woon Sen <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Mixed Seafood 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£8.95</div>
+                        <div class="price-item badge badge-primary">£9.95</div>
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <!-- Curry Tab -->
+        <!-- Add similar content for other tabs -->
+
+        <!-- Curry Tab -->
+        <div class="tab-pane fade" id="thai-curry" role="tabpanel" aria-labelledby="thai-curry-tab">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    30. Thai Green Curry <br>
+                    Chicken <br>
+                    Beef <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    31. Thai Red Curry <br>
+                    Chicken <br>
+                    Beef <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    32. Panang Curry <br>
+                    Chicken <br>
+                    Beef <br>
+                    Duck <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    33. Massaman Curry <br>
+                    Chicken <br>
+                    Beef <br>
+                    Lamb <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="stir-fries" role="tabpanel" aria-labelledby="stir-fries-tab">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    34. Pad Lao Dang <br>
+                    Chicken <br>
+                    Beef or Pork <br>
+                    King Prawn 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    35. Pad Nam Mon Hoi <br>
+                    Chicken <br>
+                    Beef <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    36. Pad Kra Paw <br>
+                    Chicken <br>
+                    Beef or Pork <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu <br>
+                    Duck <br>
+                    Squid
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    37. Pad Preaw Wan <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Vegetarian and Tofu 
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    38. Pad King <br>
+                    Chicken <br>
+                    Beef or Pork <br>
+                    King Prawn <br>
+                    Duck
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    39. Himmapan <br>
+                    Chicken <br>
+                    Beef or Pork <br>
+                    Duck <br>
+                    Vegetarian and Tofu
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    40. Pad Nam Prik Paw <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Squid
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    41. Pad Cha <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Squid
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    42. Pad Kee Maw <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Squid <br>
+                    Mixed Seafood
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£14.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    43. Pad Prik Keang <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Squid
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    45. Pad Prik <br>
+                    Chicken <br>
+                    Pork <br>
+                    King Prawn <br>
+                    Squid
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£11.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                    </div>
+                </li>
+            </li>
+            <li class="list-group-item">
+                46. Pad Kaw Pod <br>
+                Chicken <br>
+                Pork <br>
+                Beef <br>
+                King Prawn
+                <div class="price">
+                    <div class="price-item badge badge-primary">£10.95</div>
+                    <div class="price-item badge badge-primary">£11.95</div>
+                    <div class="price-item badge badge-primary">£11.95</div>
+                    <div class="price-item badge badge-primary">£12.95</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                47. Pad Kra Tiam Prik Thai <br>
+                Chicken <br>
+                Pork <br>
+                King Prawn <br>
+                Squid
+                <div class="price">
+                    <div class="price-item badge badge-primary">£10.95</div>
+                    <div class="price-item badge badge-primary">£11.95</div>
+                    <div class="price-item badge badge-primary">£12.95</div>
+                    <div class="price-item badge badge-primary">£12.95</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                48. Pad Lun Taw <br>
+                Chicken <br>
+                King Prawn <br>
+                Squid <br>
+                Mangetout only
+                <div class="price">
+                    <div class="price-item badge badge-primary">£10.95</div>
+                    <div class="price-item badge badge-primary">£12.95</div>
+                    <div class="price-item badge badge-primary">£12.95</div>
+                    <div class="price-item badge badge-primary">£8.95</div>
+                </div>
+            </li>
+            <li class="list-group-item">49. Neau Bangkok <span class="badge badge-primary">£12.95</span></li>
+            <li class="list-group-item">50. Rang Ped <span class="badge badge-primary">£16.95</span></li>
+            <li class="list-group-item">51. Ped Sapparod <span class="badge badge-primary">£14.95</span></li>
+            <li class="list-group-item">52. Kai Pad Broccoli <span class="badge badge-primary">£10.95</span></li>
+            <li class="list-group-item">53. Keang Ped Yang <span class="badge badge-primary">£14.95</span></li>
+            <li class="list-group-item">
+                54. Sawatdi Omelette <br>
+                King Prawn <br>
+                Pork <br>
+                Plain
+                <div class="price">
+                    <div class="price-item badge badge-primary">£10.95</div>
+                    <div class="price-item badge badge-primary">£9.95</div>
+                    <div class="price-item badge badge-primary">£7.95</div>
+                </div>
+            </li>
+            <li class="list-group-item">55. Kai Manaw <span class="badge badge-primary">£10.95</span></li>
+            <li class="list-group-item">56. Choo Chee Goong Nang <span class="badge badge-primary">£18.95</span></li>
+            <li class="list-group-item">57. Goong Pad Prik Nor Mai <span class="badge badge-primary">£12.95</span></li>
+            <li class="list-group-item">58. Pad Preaw Wan <span class="badge badge-primary">£15.95</span></li>
+            <li class="list-group-item">59. Pla Rad Prik <span class="badge badge-primary">£15.95</span></li>
+            <li class="list-group-item">60. Choo Chee Pla <span class="badge badge-primary">£15.95</span></li>
+            <li class="list-group-item">61. Pla Muk Kra Ta <span class="badge badge-primary">£16.95</span></li>
+            <li class="list-group-item">62. Sea Bass Manow <span class="badge badge-primary">£18.95</span></li>
+                
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="vegetables" role="tabpanel" aria-labelledby="vegetables-tab">
+            <ul class="list-group">
+                <li class="list-group-item">63. Pad Broccoli <span class="badge badge-primary">£7.95</span></li>
+                <li class="list-group-item">64. Pad Bean Sprout <span class="badge badge-primary">£7.95</span></li>
+                <li class="list-group-item">65. Pak Choy <span class="badge badge-primary">£8.95</span></li>
+                <li class="list-group-item">66. Kaw Pod Pad Prik Sod <span class="badge badge-primary">£8.95</span></li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="rice-noodles" role="tabpanel" aria-labelledby="rice-noodles-tab">
+            <ul class="list-group">
+                <li class="list-group-item">67. Sawatdi Fried Rice <span class="badge badge-primary">£10.95</span></li>
+                <li class="list-group-item">68. Coconut Rice <span class="badge badge-primary">£3.95</span></li>
+                <li class="list-group-item">69. Kaw Kai <span class="badge badge-primary">£3.95</span></li>
+                <li class="list-group-item">70. Thai Jasmine Rice <span class="badge badge-primary">£2.95</span></li>
+                <li class="list-group-item">71. Sen Plaw <span class="badge badge-primary">£3.95</span></li>
+                <li class="list-group-item">
+                    72. Pad Thai <br>
+                    Chicken <br>
+                    Prawn <br>
+                    Chicken & Prawn <br>
+                    Vegetable
+                    <div class="price">
+                        <div class="price-item badge badge-primary">£9.95</div>
+                        <div class="price-item badge badge-primary">£10.95</div>
+                        <div class="price-item badge badge-primary">£12.95</div>
+                        <div class="price-item badge badge-primary">£8.95</div>
+                    </div>
+                </li>
+                <li class="list-group-item">73. Pad Seeyu <span class="badge badge-primary">£10.95</span></li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="set-menus" role="tabpanel" aria-labelledby="set-menus-tab">
+            <ul class="list-group">
+                <li class="list-group-item">Set Menu A <br>Chicken Thai Green Curry <br>Beef Pad Nam Mon Hoi <br>Pad Pak Ruam <br>Thai Jasmine Rice <br>Ice Cream or Tea/Coffee <span class="badge badge-primary">£24.95pp</span></li>
+                <li class="list-group-item">Set Menu B <br>Beef Massaman Curry <br>Kai Pad Kra Paw <br>Goong Pad King <br>Thai Jasmine Rice <br>Ice Cream or Tea/Coffee <span class="badge badge-primary">£27.95pp</span></li>
+                <li class="list-group-item">Set Menu C <br>Choo Chee Goong Nang <br>Seafood Kai Pad Kra Paw <br>Pla Rad Prik <br>Thai Jasmine Rice <br>Ice Cream or Tea/Coffee <span class="badge badge-primary">£34.95pp</span></li>
+            
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+            <ul class="list-group">
+                <li class="list-group-item">Banana Fritter & Ice Cream <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">Pineaplle Fritter & Ice Cream <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">Thai Sticky Rice & Ice Cream <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">Banana Split <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">Orange or Lemon Sorbet <span class="badge badge-primary">£6.95</span></li>
+                <li class="list-group-item">Ice Cream (Vanilla, Chocolate, Strawberry, Coconut) <span class="badge badge-primary">£5.95</span></li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<section id="visit-us" class="contact-section" style="margin-top: 20px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 pl-md-5 pt-md-5">
+                <h2 class="findus-header">Find Us</h2>
+                <hr class="my-3">
+                <hr class="my-3">
+                <p class="findus-head">Sawatdi</p>
+                <p class="findus-el"><i class="fas fa-map-marker-alt" style="color: #4A5DA7;"></i> <a href="https://maps.google.com?q=North%20Plantation%20GY1%202LH" target="_blank">North Plantation GY1 2LH</a></p>
+                <p class="findus-el"><i class="fas fa-phone" style="color: #4A5DA7;"></i> +44 1481 725805</p>
+                <p class="findus-el"><i class="fas fa-envelope" style="color: #4A5DA7;"></i> <a href="mailto:goodfoodsawatdi@outlook.com">goodfoodsawatdi@outlook.com</a></p>
+            </div>
+            <div class="col-md-6 img-fluid p-0"> <!-- Remove text-center class -->
+                <img src="map 6.png" class="img-fluid map-image" alt="Map">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS (jQuery is required) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
