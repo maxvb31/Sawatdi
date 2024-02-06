@@ -429,35 +429,6 @@ $(document).ready(function() {
 
     document.getElementById("bookingDate").setAttribute("min", tomorrow.toISOString().split('T')[0]);
 
-    // Function to disable past dates on iOS devices
-    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-    if (iOS) {
-        var dateInput = document.getElementById("bookingDate");
-        dateInput.addEventListener('click', function() {
-            var currentDate = new Date();
-            var minDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 1);
-            this.setAttribute('min', minDate.toISOString().split('T')[0]);
-        });
-    }
-
-    // Populate booking time options
-    var bookingTimeSelect = document.getElementById("bookingTime");
-    for (var hour = 18; hour <= 20; hour++) { // Hours from 6pm to 8pm
-        for (var minutes = 0; minutes < 60; minutes += 15) { // 15-minute increments
-            var option = document.createElement("option");
-            var timeString = (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
-            option.text = timeString;
-            option.value = timeString;
-            bookingTimeSelect.add(option);
-        }
-    }
-    
-    // Add the last booking time (9:00pm)
-    var lastOption = document.createElement("option");
-    lastOption.text = "21:00";
-    lastOption.value = "21:00";
-    bookingTimeSelect.add(lastOption);
-
     // Function to disable Mondays
     function disableMondays() {
         var dates = document.querySelectorAll('input[type="date"]');
