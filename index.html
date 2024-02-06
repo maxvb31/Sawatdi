@@ -423,6 +423,7 @@ $(document).ready(function() {
 });
 
   
+
 window.onload = function() {
     var today = new Date();
     var tomorrow = new Date(today);
@@ -448,7 +449,7 @@ window.onload = function() {
     lastOption.value = "21:00";
     bookingTimeSelect.add(lastOption);
 
-    // Function to disable Mondays and show alert for past dates
+    // Function to check the selected date
     function checkDate() {
         var dateInput = document.getElementById("bookingDate");
         dateInput.addEventListener('input', function() {
