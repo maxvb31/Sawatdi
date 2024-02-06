@@ -422,9 +422,7 @@ $(document).ready(function() {
   });
 });
 
-  
-
-window.onload = function() {
+  window.onload = function() {
     var today = new Date();
     var tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1); // Get tomorrow's date
@@ -449,21 +447,23 @@ window.onload = function() {
     lastOption.value = "21:00";
     bookingTimeSelect.add(lastOption);
 
-    // Function to check the selected date
-    function checkDate() {
-        var dateInput = document.getElementById("bookingDate");
-        dateInput.addEventListener('input', function() {
-            var selectedDate = new Date(this.value);
-            var currentDate = new Date();
-            if (selectedDate < currentDate) {
-                var customMessage = "Please select a date from tomorrow onwards."; // Custom message
-                alert(customMessage); // Show alert message
-                this.value = ''; // Clear the input
-            }
+    // Function to disable Mondays
+    function disableMondays() {
+        var dates = document.querySelectorAll('input[type="date"]');
+        dates.forEach(function(item) {
+            item.addEventListener('input', function() {
+                var selectedDate = new Date(this.value);
+                if (selectedDate.getDay() === 1) { // Check if selected date is Monday (Monday is 1)
+                    var customMessage = "We're sorry, Sawatdi is closed on Mondays, please select another date!"; // Custom message
+                    document.getElementById("alertMessage").innerHTML = customMessage;
+                    document.getElementById("customAlert").style.display = "block"; // Show custom alert message
+                    this.value = ''; // Clear the input
+                }
+            });
         });
     }
 
-    checkDate(); // Call the function to check the date
+    disableMondays(); // Call the function to disable Mondays
 
     // Get the modal element
     var modal = document.getElementById("customAlert");
@@ -494,4 +494,3 @@ window.onload = function() {
 
 </body>
 </html>
-
