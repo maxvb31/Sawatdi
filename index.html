@@ -438,11 +438,9 @@ $(document).ready(function() {
                 if (selectedDate.getDay() === 1) { // Check if selected date is Monday (Monday is 1)
                     var customMessage = "Sorry, Mondays are not available for booking. Please choose another date."; // Custom message
                     alert(customMessage); // Show alert message
-                    this.value = ''; // Clear the input
                 } else if (selectedDate < tomorrow) { // Check if selected date is before tomorrow
                     var customMessage = "Please select a date from tomorrow onwards."; // Custom message
                     alert(customMessage); // Show alert message
-                    this.value = ''; // Clear the input
                 }
             });
         });
