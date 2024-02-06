@@ -422,31 +422,47 @@ $(document).ready(function() {
   });
 });
 
-  window.onload = function() {
+  
+window.onload = function() {
     var today = new Date();
     var tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1); // Get tomorrow's date
 
     document.getElementById("bookingDate").setAttribute("min", tomorrow.toISOString().split('T')[0]);
 
-    // Function to disable Mondays
-    function disableMondays() {
-        var dates = document.querySelectorAll('input[type="date"]');
-        dates.forEach(function(item) {
-            item.addEventListener('input', function() {
-                var selectedDate = new Date(this.value);
-                if (selectedDate.getDay() === 1) { // Check if selected date is Monday (Monday is 1)
-                    var customMessage = "Sorry, Mondays are not available for booking. Please choose another date."; // Custom message
-                    alert(customMessage); // Show alert message
-                } else if (selectedDate < tomorrow) { // Check if selected date is before tomorrow
-                    var customMessage = "Please select a date from tomorrow onwards."; // Custom message
-                    alert(customMessage); // Show alert message
-                }
-            });
+    // Populate booking time options
+    var bookingTimeSelect = document.getElementById("bookingTime");
+    for (var hour = 18; hour <= 20; hour++) { // Hours from 6pm to 8pm
+        for (var minutes = 0; minutes < 60; minutes += 15) { // 15-minute increments
+            var option = document.createElement("option");
+            var timeString = (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+            option.text = timeString;
+            option.value = timeString;
+            bookingTimeSelect.add(option);
+        }
+    }
+    
+    // Add the last booking time (9:00pm)
+    var lastOption = document.createElement("option");
+    lastOption.text = "21:00";
+    lastOption.value = "21:00";
+    bookingTimeSelect.add(lastOption);
+
+    // Function to disable Mondays and show alert for past dates
+    function checkDate() {
+        var dateInput = document.getElementById("bookingDate");
+        dateInput.addEventListener('input', function() {
+            var selectedDate = new Date(this.value);
+            var currentDate = new Date();
+            if (selectedDate < currentDate) {
+                var customMessage = "Please select a date from tomorrow onwards."; // Custom message
+                alert(customMessage); // Show alert message
+                this.value = ''; // Clear the input
+            }
         });
     }
 
-    disableMondays(); // Call the function to disable Mondays
+    checkDate(); // Call the function to check the date
 
     // Get the modal element
     var modal = document.getElementById("customAlert");
