@@ -454,7 +454,7 @@ $(document).ready(function() {
             item.addEventListener('input', function() {
                 var selectedDate = new Date(this.value);
                 if (selectedDate.getDay() === 1) { // Check if selected date is Monday (Monday is 1)
-                    var customMessage = "We're sorry, Sawatdi is closed on Mondays, please select another date!"; // Custom message
+                    var customMessage = "Sorry, Mondays are not available for booking. Please choose another date."; // Custom message
                     document.getElementById("alertMessage").innerHTML = customMessage;
                     document.getElementById("customAlert").style.display = "block"; // Show custom alert message
                     this.value = ''; // Clear the input
