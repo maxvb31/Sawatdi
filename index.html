@@ -429,6 +429,17 @@ $(document).ready(function() {
 
     document.getElementById("bookingDate").setAttribute("min", tomorrow.toISOString().split('T')[0]);
 
+    // Function to disable past dates on iOS devices
+    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    if (iOS) {
+        var dateInput = document.getElementById("bookingDate");
+        dateInput.addEventListener('click', function() {
+            var currentDate = new Date();
+            var minDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 1);
+            this.setAttribute('min', minDate.toISOString().split('T')[0]);
+        });
+    }
+
     // Populate booking time options
     var bookingTimeSelect = document.getElementById("bookingTime");
     for (var hour = 18; hour <= 20; hour++) { // Hours from 6pm to 8pm
