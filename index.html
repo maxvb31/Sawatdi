@@ -422,7 +422,7 @@ $(document).ready(function() {
   });
 });
 
-  window.onload = function() {
+ window.onload = function() {
     var today = new Date();
     var tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1); // Get tomorrow's date
@@ -447,14 +447,15 @@ $(document).ready(function() {
     lastOption.value = "21:00";
     bookingTimeSelect.add(lastOption);
 
-    // Function to disable Mondays and check for past dates
-    function disablePastDates() {
+    // Function to check for past dates and prevent selection of Mondays
+    function checkDate() {
         var dates = document.querySelectorAll('input[type="date"]');
         dates.forEach(function(item) {
             item.addEventListener('input', function() {
                 var selectedDate = new Date(this.value);
-                if (selectedDate < today) { // Check if selected date is in the past
-                    var customMessage = "Please select a date from tomorrow onwards."; // Custom message
+                var dayOfWeek = selectedDate.getDay();
+                if (selectedDate < today || dayOfWeek === 1) { // Check if selected date is in the past or Monday
+                    var customMessage = dayOfWeek === 1 ? "We're sorry, Sawatdi is closed on Mondays, please select another date!" : "Please select a date from tomorrow onwards."; // Custom message
                     document.getElementById("alertMessage").innerHTML = customMessage;
                     document.getElementById("customAlert").style.display = "block"; // Show custom alert message
                     this.value = ''; // Clear the input
@@ -463,7 +464,7 @@ $(document).ready(function() {
         });
     }
 
-    disablePastDates(); // Call the function to check for past dates
+    checkDate(); // Call the function to check for past dates and prevent selection of Mondays
 
     // Get the modal element
     var modal = document.getElementById("customAlert");
